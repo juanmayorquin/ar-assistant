@@ -15,23 +15,26 @@ public class Assistant : MonoBehaviour
 
     void Start()
     {
-        
+        if (audios.Length > 0)
+        {
+            audioSource.clip = audios[index];
+            audioSource.Play();
+        }
     }
 
     void Update()
     {
         animator.SetBool("hablando", audioSource.isPlaying);
-
-        if(audios.Length > 0 )
-        {
-            audioSource.clip = audios[index];
-        }
     }
 
     public void LoadAudios(AudioClip[] audios)
     {
         index = 0;
         this.audios = audios;
+        if (audios.Length > 0)
+        {
+            audioSource.clip = audios[index];
+        }
         audioSource.Play();
     }
 
@@ -40,6 +43,10 @@ public class Assistant : MonoBehaviour
         if (index < audios.Length - 1)
         {
             index += 1;
+            if (audios.Length > 0)
+            {
+                audioSource.clip = audios[index];
+            }
             audioSource.Play();
         }
     }
