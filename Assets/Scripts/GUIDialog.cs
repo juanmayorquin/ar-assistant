@@ -46,6 +46,9 @@ public class GUIDialog : MonoBehaviour
         {
             index+=1;
         }
-        assistant.IncreaseIndex();
+        if (assistant != null)
+        {
+            assistant.IncreaseIndex();
+        }
     }
 }
