@@ -158,10 +158,10 @@ RectTransform:
   - {fileID: 583035937}
   m_Father: {fileID: 1329744196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -221.58, y: -0.000045225228}
-  m_SizeDelta: {x: 392.48, y: 104.53}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -221.58002, y: -0.000045225228}
+  m_SizeDelta: {x: -485.52, y: 104.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &101949437
 MonoBehaviour:
@@ -283,8 +283,11 @@ MonoBehaviour:
     toda la familia."
   - "Desde las \xFAltimas tendencias de moda hasta deliciosos manjares, UAO Mall
     es el lugar perfecto para satisfacer tus necesidades y deseos. \xA1Bienvenido!"
-  audios: []
-  assistant: {fileID: 0}
+  audios:
+  - {fileID: 8300000, guid: 388ff763ab5a147488072701c606ec45, type: 3}
+  - {fileID: 8300000, guid: f1bbbda25063b2e40912ebea0a543e68, type: 3}
+  - {fileID: 8300000, guid: b25e264611211e6498d2a6152065b9c2, type: 3}
+  assistant: {fileID: 1944926882}
 --- !u!1 &207910251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,10 +1086,10 @@ RectTransform:
   - {fileID: 577597109}
   m_Father: {fileID: 1329744196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 193.51988, y: -0.000045225228}
-  m_SizeDelta: {x: 392.48, y: 104.53}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 193.5199, y: -0.000045776367}
+  m_SizeDelta: {x: -485.52, y: 104.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &592320595
 MonoBehaviour:
@@ -1407,8 +1410,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 530}
-  m_SizeDelta: {x: -127.660034, y: 544.16003}
+  m_AnchoredPosition: {x: 0, y: 535.98}
+  m_SizeDelta: {x: -127.66, y: 556.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &824532572
 MonoBehaviour:
@@ -1941,6 +1944,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1944926881}
   animator: {fileID: 1944926880}
+  audios:
+  - {fileID: 8300000, guid: c517ef4e931c6e34b91fad64915f890a, type: 3}
 --- !u!1 &1988989217
 GameObject:
   m_ObjectHideFlags: 0

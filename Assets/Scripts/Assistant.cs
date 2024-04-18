@@ -10,7 +10,7 @@ public class Assistant : MonoBehaviour
     [SerializeField] private Animator animator;
     private int index = 0;
 
-    private AudioClip[] audios = new AudioClip[0];
+    [SerializeField] private AudioClip[] audios = new AudioClip[0];
 
 
     void Start()
