@@ -15,7 +15,13 @@ public class Assistant : MonoBehaviour
 
     void Start()
     {
-        if (audios.Length > 0)
+        audioSource = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
+    }
+
+    public void LoadAudioAtStart()
+    {
+        if(audios.Length > 0)
         {
             audioSource.clip = audios[index];
             audioSource.Play();
@@ -43,10 +49,9 @@ public class Assistant : MonoBehaviour
         if (index < audios.Length - 1)
         {
             index += 1;
-            if (audios.Length > 0)
-            {
-                audioSource.clip = audios[index];
-            }
+
+            audioSource.clip = audios[index];
+
             audioSource.Play();
         }
     }
