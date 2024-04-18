@@ -21,6 +21,7 @@ public class Assistant : MonoBehaviour
     void Update()
     {
         animator.SetBool("hablando", audioSource.isPlaying);
+
         if(audios.Length > 0 )
         {
             audioSource.clip = audios[index];
@@ -31,6 +32,7 @@ public class Assistant : MonoBehaviour
     {
         index = 0;
         this.audios = audios;
+        audioSource.Play();
     }
 
     public void IncreaseIndex()
