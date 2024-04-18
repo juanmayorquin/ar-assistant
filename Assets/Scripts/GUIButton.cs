@@ -10,6 +10,10 @@ public class GUIButton : MonoBehaviour
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] GUIDialog guiDialog;
     [SerializeField] string[] dialogs;
+    [SerializeField] AudioClip[] audios;
+
+    [SerializeField] private Assistant assistant;
+
 
     private void Start()
     {
@@ -32,6 +36,13 @@ public class GUIButton : MonoBehaviour
         if(text != null)
         {
             guiDialog.LoadDialogs(dialogs);
+        }
+        if(assistant != null)
+        {
+            if(audios.Length> 0)
+            {
+                assistant.LoadAudios(audios);
+            }
         }
     }
 
